@@ -1,0 +1,13 @@
+@import "./fontMaps.scss";
+
+@mixin fonts {
+  @each $name, $value in $fontWeights {
+    &--#{$name} {
+      font-weight: $value;
+    }
+  }
+}
+
+.text {
+    @include fonts();
+}

@@ -1,5 +1,6 @@
 import './App.css';
 import './scss/headers.scss'
+import './scss/mixinFontWeights.scss'
 
 function App() {
   return (
