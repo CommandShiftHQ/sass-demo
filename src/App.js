@@ -1,11 +1,11 @@
-import './App.css';
 import './scss/headers.scss'
 import './scss/mixinFontWeights.scss'
+import './scss/mixinFontWeightSize.scss'
 
 function App() {
   return (
     <div className="App">
-      <div className="text--bold">Demo component</div>
+      <div className="text__bold--2xl">Demo component</div>
       <h1>h1</h1>
       <h2>h2</h2>
       <h3>h3</h3>

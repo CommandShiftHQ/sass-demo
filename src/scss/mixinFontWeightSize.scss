@@ -1,0 +1,21 @@
+@import "./fontMaps.scss";
+
+// Programmatic font sizes eg text__bold--lg
+@mixin tailwindFonts() {
+    @each $name, $value in $fontWeights {
+      &__#{$name} {
+        font-weight: $value;
+        @each $fontname, $fontvalue in $fontSizes {
+          &--#{$fontname} {
+            font-weight: $value;
+            font-size: $fontvalue;
+          }
+        }
+      }
+    }
+  }
+  
+  .text {
+    @include tailwindFonts();
+  }
+  
