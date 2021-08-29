@@ -1,7 +1,6 @@
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 24px;
+$base-font-size: 12px;
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: (7 - $i) * $base-font-size;
+  }
 }
